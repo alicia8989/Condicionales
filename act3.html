@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Tags</title>
+</head>
+  <style>
+      #capa1{
+        left:20px; 
+            top:40px;
+         background-color:rgb(111, 0, 255);
+        }
+        
+      #capa2{
+         left:20px;
+           top:40px; 
+           background-color:rgb(39, 177, 170);
+        }
+      .caja{
+         width:100px; height:100px;
+        }
+  </style>
+   <script> 
+   function Dice(mensaje){
+    alert (mensaje)
+    }
+   </script>
+   <body>
+       <div id="contenedor">
+          <div onclick="Dice('Soy Violeta')"; id="capa1" class="caja">A</div>
+          <div onclick="Dice('Soy Azul')"; id="capa2" class="caja">R</div>
+       </div>
+   </body>
+</html>

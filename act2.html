@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categoría deportiva</title>
+</head>
+<body>
+    <style> 
+     body{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 45px;
+            background-color:cornflowerblue;
+            color:indigo;
+        }
+        .Benjamin{
+            color:rgb(97, 173, 116);
+            background-color: aliceblue;
+
+        }
+        .Alevin{
+            color:rgb(79, 120, 182);
+            background-color: aliceblue;
+        }
+        .Infantil{
+            color:rgb(59, 168, 172);
+            background-color: aliceblue;
+        }
+        .Cadete{
+            color:rgb(185, 113, 181);
+            background-color: aliceblue;
+        }
+        
+    </style>
+    <script>
+        function VerCategoria(){
+           var edad= parseInt (document.getElementById("edad").value)
+           if(edad <=7){
+            //alert("Benjamin")
+            document.getElementById("mensaje_salida").innerHTML="<span class='Benjamin'>BENJAMIN</span>";
+           }else if (edad <=9){
+            //alert("Alevin")
+            document.getElementById("mensaje_salida").innerHTML="<span class='Alevin'>ALEVIN</span>";
+           }else if (edad<=11) {
+            //alert("infantil ")
+            document.getElementById("mensaje_salida").innerHTML="<span class='Infantil'>INFANTIL</span>";
+           }else {
+            //alert ("cadete")
+            document.getElementById("mensaje_salida").innerHTML="<span class='Cadete'>CADETE</span>";
+           }
+        }
+
+
+
+    </script>
+    Edad: <input type="text" id="edad"><br>
+    <input type="button" value="Ver categoría" onclick="VerCategoria()"><br>
+    <div id="mensaje_salida"></div>
+</body>
+</html>                     

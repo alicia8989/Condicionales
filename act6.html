@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edad de tu amigo y tuya</title>
+</head>
+<body>
+    <style>
+        body{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 45px;
+            background-color:rgb(31, 119, 115);
+            color:rgb(111, 61, 146);
+        }
+    </style>
+    <script>
+        function mayor(){
+          
+            var edad1= document.getElementById("edad1").value;
+            var edad2= document.getElementById("edad2").value;
+            
+            alert("edad1:"+edad1);
+            if(edad1<edad2){
+            document.getElementById("mensaje_salida").innerHTML = "<span class='mayor'>El mayor es tu amigo</span>"
+            }else if(edad2<edad1) {
+            document.getElementById("mensaje_salida").innerHTML = "<span class='mayor'>El mayor eres tú</Span>"
+            }      }
+
+
+    </script>
+    Dime tu nombre:<input type="text" id="tunombre"><br>
+    Dime el nombre de tu amigo:<input type="text" id="sunombre"><br>
+    Introduce tu edad:<input type="text" id="edad1"><br>
+    Introduce la edad de tu amigo<input type="text" id="edad2"><br>
+    <input type="button" value="El mayor es..." onclick="mayor()"><br>
+    <div id="mensaje_salida"></div>
+
+    
+</body>
+</html>
